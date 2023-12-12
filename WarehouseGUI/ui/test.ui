@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBalls">
+    <property name="title">
+     <string>Balls</string>
+    </property>
+    <addaction name="actionBalls_2"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuRust">
+    <property name="title">
+     <string>Rust</string>
+    </property>
+    <addaction name="actionBalls"/>
+   </widget>
+   <widget class="QMenu" name="menuBalls3">
+    <property name="title">
+     <string>Balls3</string>
+    </property>
+   </widget>
+   <addaction name="menuBalls"/>
+   <addaction name="menuRust"/>
+   <addaction name="menuBalls3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBalls_2">
+   <property name="text">
+    <string>Balls 2</string>
+   </property>
+  </action>
+  <action name="actionBalls">
+   <property name="text">
+    <string>Balls</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
