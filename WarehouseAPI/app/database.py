@@ -13,7 +13,7 @@ class Database:
         """
         print("Connecting to PostgreSQL Database...")
         try:
-            conn = psycopg2.connect(user="postgres", password="password", host="localhost", port="5432",
+            conn = psycopg2.connect(user="postgres", password="password", host="postgres", port="5432",
                                     database="postgres")
         except psycopg2.OperationalError as e:
             print(f"Could not connect to Database: {e}")

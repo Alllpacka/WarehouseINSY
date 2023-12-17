@@ -1,4 +1,4 @@
-POST localhost:8000/add_supplier
+POST localhost:8000/suppliers
 Content-Type: application/json
 
 {
@@ -10,4 +10,4 @@ Content-Type: application/json
 GET localhost:8000/suppliers
 
 ###
-GET localhost:8000/items
+GET api/items

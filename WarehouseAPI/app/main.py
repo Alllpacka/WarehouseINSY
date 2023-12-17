@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from app.database import db
 from app.routes.suppliers import router as suppliers_router
 
-app = FastAPI()
+app = FastAPI(root_path="/warehouse")
 app.include_router(suppliers_router)
 
 

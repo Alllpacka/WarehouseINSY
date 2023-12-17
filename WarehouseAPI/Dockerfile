@@ -4,9 +4,6 @@ FROM python
 # Set the working directory to /code
 WORKDIR /code
 
-# Copy only the requirements file to the container
-COPY ./requirements.txt /code/requirements.txt
-
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
