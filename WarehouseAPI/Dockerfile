@@ -4,6 +4,8 @@ FROM python
 # Set the working directory to /code
 WORKDIR /code
 
+COPY requirements.txt /code/requirements.txt
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 

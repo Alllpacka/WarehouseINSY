@@ -7,7 +7,25 @@ Content-Type: application/json
 }
 
 ###
-GET localhost:8000/suppliers
+GET localhost:8000/shelves
 
 ###
-GET api/items
+POST localhost:8000/warehouses
+Content-Type: application/json
+
+{"zipCode": 1234, "address": "79999"}
+
+###
+POST localhost:8000/shelves
+Content-Type: application/json
+
+{"locationCode": "XYZ", "warehouseId": 1}
+
+###
+GET localhost:8000/shelves
+
+###
+PATCH localhost:8000/suppliers/1
+Content-Type: application/json
+
+{"name": "Harold", "city": "Wien"}
