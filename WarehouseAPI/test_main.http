@@ -7,6 +7,9 @@ Content-Type: application/json
 }
 
 ###
+GET localhost:8000/suppliers
+
+###
 GET localhost:8000/shelves
 
 ###
@@ -29,3 +32,9 @@ PATCH localhost:8000/suppliers/1
 Content-Type: application/json
 
 {"name": "Harold", "city": "Wien"}
+
+###
+POST localhost:8000/items
+Content-Type: application/json
+
+{"name":  "test", "supplierId": 1, "shelfId": 2, "buyingPrice": 5, "sellingPrice": 7 }

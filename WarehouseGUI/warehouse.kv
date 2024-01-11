@@ -1,0 +1,172 @@
+ScreenManager:
+    HomePage:
+    ItemsTable:
+    ShelvesTable:
+    SuppliersTable:
+    WarehousesTable:
+
+
+<HomePage>:
+    name: "HomePage"
+    MDScreen:
+
+    MDLabel:
+        adaptive_size: True
+        text: "Warehouse"
+        font_size: 100
+        halign: "center"
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 0.5, "center_y": 0.8}
+
+    MDLabel:
+        adaptive_size: True
+        text: "GUI: Jakob Franzel"
+        font_size: 15
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 1.1, "center_y": 0.12}
+
+    MDLabel:
+        adaptive_size: True
+        text: "API: Paul Hösch"
+        font_size: 15
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 1.1, "center_y": 0.09}
+
+    MDLabel:
+        adaptive_size: True
+        text: "Funding: Baul Kösch"
+        font_size: 15
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 1.1, "center_y": 0.06}
+
+
+    MDFillRoundFlatButton:
+        text: "Items"
+        # font_name: "Comic"
+        # halign: "center"
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        on_release:
+            root.switch_items()
+
+
+    MDFillRoundFlatButton:
+        text: "Shelves"
+        # font_name: "Comic"
+        # halign: "center"
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 0.5, "center_y": 0.4}
+        on_release:
+            root.switch_shelves()
+
+
+    MDFillRoundFlatButton:
+        text: "Suppliers"
+        # font_name: "Comic"
+        # halign: "center"
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 0.5, "center_y": 0.3}
+        on_release:
+            root.switch_suppliers()
+
+    MDFillRoundFlatButton:
+        text: "Warehouses"
+        # font_name: "Comic"
+        # halign: "center"
+        size_hint: 0.5, 0.06
+        pos_hint: {"center_x": 0.5, "center_y": 0.2}
+        on_release:
+            root.switch_warehouses()
+
+
+<ItemsTable>:
+    name: "ItemsTable"
+
+    MDLabel:
+        adaptive_size: True
+        text: "Items"
+        font_size: 50
+        size_hint: 0.5, 0.06
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.9}
+
+    MDIconButton:
+        icon: "reload"
+        pos_hint: {"center_x": 0.93, "center_y": 0.85}
+        on_release:
+            root.reload()
+
+    MDFillRoundFlatButton:
+        text: "Back"
+        pos_hint: {"center_x": 0.5, "center_y": 0.15}
+        on_release:
+            root.switch_home()
+
+<ShelvesTable>:
+    name: "ShelvesTable"
+
+    MDLabel:
+        adaptive_size: True
+        text: "Shelves"
+        font_size: 50
+        size_hint: 0.5, 0.06
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.9}
+
+    MDIconButton:
+        icon: "reload"
+        pos_hint: {"center_x": 0.93, "center_y": 0.85}
+        on_release:
+            root.reload()
+
+    MDFillRoundFlatButton:
+        text: "Back"
+        pos_hint: {"center_x": 0.5, "center_y": 0.15}
+        on_release:
+            root.switch_home()
+
+<SuppliersTable>:
+    name: "SuppliersTable"
+
+    MDLabel:
+        adaptive_size: True
+        text: "Suppliers"
+        font_size: 50
+        size_hint: 0.5, 0.06
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.9}
+
+    MDIconButton:
+        icon: "reload"
+        pos_hint: {"center_x": 0.93, "center_y": 0.85}
+        on_release:
+            root.reload()
+
+    MDFillRoundFlatButton:
+        text: "Back"
+        pos_hint: {"center_x": 0.5, "center_y": 0.15}
+        on_release:
+            root.switch_home()
+
+<WarehousesTable>:
+    name: "WarehousesTable"
+
+    MDLabel:
+        adaptive_size: True
+        text: "Warehouses"
+        font_size: 50
+        size_hint: 0.5, 0.06
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.9}
+
+    MDIconButton:
+        icon: "reload"
+        pos_hint: {"center_x": 0.93, "center_y": 0.85}
+        on_release:
+            root.reload()
+
+    MDFillRoundFlatButton:
+        text: "Back"
+        pos_hint: {"center_x": 0.5, "center_y": 0.15}
+        on_release:
+            root.switch_home()
